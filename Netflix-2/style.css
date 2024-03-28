@@ -1,0 +1,532 @@
+@import url("https://fonts.cdnfonts.com/css/netflix-font");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Netflix Font", sans-serif;
+  color: white;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  --redcolor: #e50914;
+  --redhover: #c11119;
+  --redclick: #ac0109;
+  --linebar: #232323;
+}
+
+.one {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/Data/Images/bgpicture.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+nav img {
+  color: red;
+  width: 148px;
+}
+
+nav button {
+  background-color: var(--redcolor);
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 0.875rem;
+  border-radius: 7px;
+  padding: 0.6rem 1rem;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+nav button a {
+  text-decoration: none;
+}
+
+nav .sign-in button:hover {
+  background-color: var(--redhover);
+}
+
+main {
+  margin-top: 130px;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    margin-top: 110px;
+  }
+  nav img {
+    width: 110px;
+  }
+}
+
+.one .body {
+  text-align: center;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.one .body span:first-child {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .one .body span:first-child {
+    font-size: 2rem;
+  }
+}
+
+.one .body span:nth-child(2) {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.one .body span:last-child {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+main .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.email input:nth-child(1) {
+  text-align: left;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  width: 24rem;
+  height: 3.5rem;
+  padding-left: 1rem;
+  border: 1px solid rgb(138, 137, 137);
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.email input:nth-child(1)::placeholder {
+  color: rgb(201, 201, 201);
+  transition: all 0.15s ease-in-out 0.1s;
+}
+
+.email input:nth-child(1):focus::placeholder {
+  font-size: 0.8rem;
+  transform: translateY(-15px);
+}
+
+.email button {
+  color: white;
+  background-color: var(--redcolor);
+  width: 12.5rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.email button a {
+  text-decoration: none;
+}
+
+.email button:hover {
+  background-color: var(--redhover);
+}
+
+.linebar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--linebar);
+}
+
+/* <!-- !---------------------------
+-------------DISPLAY - 2---------- --> */
+.two {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.two .left div:nth-child(1) {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.two .left div:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+}
+.two .left div:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.two div.right {
+  position: relative;
+}
+
+.two div.right img {
+  width: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.two div.right video {
+  width: 360px;
+  position: absolute;
+  top: 79px;
+  left: 67px;
+  overflow: hidden;
+}
+/* <!-- !---------------------------
+-------------DISPLAY - 3---------- --> */
+.three {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+section.three img {
+  width: 650px;
+}
+
+.three .left div:nth-child(1) {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.three .left div:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.three .left div:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.three .left div:nth-child(4) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* <!-- !---------------------------
+-------------DISPLAY - 4---------- --> */
+
+.four {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  /* padding-left: 20rem; */
+}
+
+.four div:nth-child(1) {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.four div:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 900;
+  padding-bottom: 0.5rem;
+}
+
+.four div:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.four div:nth-child(4) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.four div:nth-child(5) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* <!-- !---------------------------
+-------------DISPLAY - 5---------- --> */
+
+.five {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.five div.left img {
+  width: 600px;
+}
+
+.five div:nth-child(1) {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.five div:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 900;
+  padding-bottom: 0.5rem;
+}
+
+.five div:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.five div:nth-child(4) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* <!-- !---------------------------
+-------------DISPLAY - 6---------- --> */
+.six {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.six h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  padding-top: 2.5rem;
+}
+
+.six div i {
+  font-size: 2.5rem;
+}
+
+.six .box {
+  background-color: #303030;
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.six .box:hover {
+  background-color: #414141;
+}
+
+.six .txt {
+  padding-top: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.six .email {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.six .email button {
+  margin-top: 1rem;
+}
+
+/* <!-- !---------------------------
+-------------DISPLAY - 7---------- --> */
+
+.seven {
+  background-color: black;
+  padding: 5rem 5rem 10rem 10rem;
+}
+
+.seven a.first {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+.seven .alllinks a:first-child {
+  padding-top: 1.5rem;
+}
+.seven .alllinks {
+  display: flex;
+  gap: 2rem;
+}
+.seven .link {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.seven a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  main .email {
+    flex-direction: column;
+  }
+  main {
+    padding-bottom: 20rem;
+  }
+  .one .body span:first-child {
+    font-size: 1.5rem;
+  }
+  .one .body span:nth-child(2) {
+    font-size: 1rem;
+  }
+  .one .body span:last-child {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+  .email input:nth-child(1) {
+    width: 16rem !important;
+  }
+  .two .left div:nth-child(1) {
+    text-align: center;
+    font-size: 2rem !important;
+  }
+  .two .left div:nth-child(2),
+  .two .left div:nth-child(3) {
+    text-align: center;
+    font-size: 1rem !important;
+  }
+  .two div.right img {
+    width: 300px !important;
+  }
+  .two div.right video {
+    width: 250px !important;
+    top: 30px !important;
+    left: 37px !important;
+  }
+  .three .left div:nth-child(1),
+  .three .left div:nth-child(2) {
+    font-size: 2rem;
+  }
+  .three .left div:nth-child(3),
+  .three .left div:nth-child(4) {
+    font-size: 1rem;
+  }
+  section.three img {
+    width: 350px;
+  }
+  .four div:nth-child(1),
+  .four div:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .four div:nth-child(3),
+  .four div:nth-child(4),
+  .four div:nth-child(5) {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .five div.left img {
+    width: 300px;
+  }
+
+  .five div:nth-child(1),
+  .five div:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .five div:nth-child(3),
+  .five div:nth-child(4) {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  nav {
+    margin-bottom: -3rem;
+  }
+
+  .six h2 {
+    font-size: 1.5rem;
+  }
+
+  .seven {
+    padding: 3rem 0rem;
+  }
+  .seven a.first {
+    margin-top: 12rem;
+  }
+
+  .seven a {
+    font-size: 12px;
+  }
+  .six div i {
+    font-size: 1.5rem;
+  }
+  .six .box div {
+    font-size: 1rem;
+  }
+
+  .six .box {
+    height: 7px;
+  }
+
+  .five .right {
+    text-align: center;
+  }
+
+  .one {
+    height: 550px;
+  }
+  nav {
+    display: flex;
+  }
+}
